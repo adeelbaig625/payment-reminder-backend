@@ -19,6 +19,7 @@ cron.schedule("* 0 * * *", async() => {
             }
         };
   
+
         var options = {
             priority: "high",
             timeToLive: 60 * 60 *24
