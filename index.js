@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 const dbref = require("./db");
 const db = dbref.admin.firestore();
 
-
+/* the job will start at every 12 am */
 cron.schedule("* 0 * * *", async() => {
  
     try{
